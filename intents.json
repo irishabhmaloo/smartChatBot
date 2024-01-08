@@ -1,0 +1,696 @@
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi",
+                                "Hello",
+                                "Hey",
+                                "Greetings",
+                                "Howdy"
+                        ],
+                        "responses": [
+                                "Hello! How can I help you?",
+                                "Hi there! What can I do for you?",
+                                "Hey! What's up?"
+                        ]
+                },
+                {
+                        "tag": "weather",
+                        "patterns": [
+                                "What's the weather like?",
+                                "Tell me the weather forecast",
+                                "Weather update"
+                        ],
+                        "responses": [
+                                "I'm sorry, I don't have real-time weather information. You can check a weather website or app for the latest updates."
+                        ]
+                },
+                {
+                        "tag": "gratitude",
+                        "patterns": [
+                                "Thanks",
+                                "Thank you",
+                                "Appreciate it",
+                                "Thanks a lot"
+                        ],
+                        "responses": [
+                                "You're welcome!",
+                                "Anytime!",
+                                "Glad I could help."
+                        ]
+                },
+                {
+                        "tag": "farewell",
+                        "patterns": [
+                                "Goodbye",
+                                "Farewell",
+                                "Bye",
+                                "See you later",
+                                "Take care"
+                        ],
+                        "responses": [
+                                "Goodbye! Have a great day.",
+                                "Farewell! Come back soon.",
+                                "See you later!"
+                        ]
+                },
+                {
+                        "tag": "general",
+                        "patterns": [
+                                "How are you?",
+                                "What's up?",
+                                "Tell me a joke",
+                                "Who are you?"
+                        ],
+                        "responses": [
+                                "I'm just a chatbot here to assist you.",
+                                "Not much, just here to chat.",
+                                "Sure, here's a joke: Why don't scientists trust atoms? Because they make up everything!"
+                        ]
+                },
+                {
+                        "tag": "technology",
+                        "patterns": [
+                                "Tell me about the latest tech news",
+                                "What's trending in technology?",
+                                "Any cool gadgets out there?",
+                                "Tech updates",
+                                "Tell me about AI"
+                        ],
+                        "responses": [
+                                "I can provide information on the latest tech trends. Just let me know what you're interested in!",
+                                "Sure, let's talk tech! What specific topic are you curious about?",
+                                "AI is fascinating! Would you like to know about any specific aspect of artificial intelligence?"
+                        ]
+                },
+                {
+                        "tag": "movies",
+                        "patterns": [
+                                "Recommend a good movie",
+                                "What's your favorite film?",
+                                "Tell me about recent releases",
+                                "Movie suggestions",
+                                "Best movies of all time"
+                        ],
+                        "responses": [
+                                "I'm not a movie critic, but I can recommend some popular films. What genre are you in the mood for?",
+                                "I don't watch movies, but I can help you find some highly rated ones!",
+                                "Sure, let me suggest a classic: The Shawshank Redemption."
+                        ]
+                },
+                {
+                        "tag": "travel",
+                        "patterns": [
+                                "Best travel destinations",
+                                "Tell me about exotic places",
+                                "Travel recommendations",
+                                "Dream vacation spots",
+                                "Places to visit"
+                        ],
+                        "responses": [
+                                "There are so many amazing places! What type of travel experience are you looking for?",
+                                "Tell me your interests, and I'll suggest a great travel destination for you.",
+                                "Whether you like beaches or mountains, I can recommend a perfect travel spot."
+                        ]
+                },
+                {
+                        "tag": "food",
+                        "patterns": [
+                                "Favorite cuisine",
+                                "Tell me a recipe",
+                                "Best restaurants nearby",
+                                "Food recommendations",
+                                "What's for dinner?"
+                        ],
+                        "responses": [
+                                "I don't eat, but I can share delicious recipes! What type of cuisine are you interested in?",
+                                "Looking for a specific recipe? Let me know, and I'll find one for you.",
+                                "Craving something specific? I can suggest great local restaurants."
+                        ]
+                },
+                {
+                        "tag": "sports",
+                        "patterns": [
+                                "Favorite sports team",
+                                "Tell me about recent sports events",
+                                "Sports news",
+                                "Best athletes",
+                                "Favorite sport"
+                        ],
+                        "responses": [
+                                "I don't play sports, but I can share recent updates! Which sport are you interested in?",
+                                "Exciting sports events happen regularly. What specific information are you looking for?",
+                                "Discussing sports is always fun! What's your favorite sport?"
+                        ]
+                },
+                {
+                        "tag": "music",
+                        "patterns": [
+                                "Favorite music genre",
+                                "Tell me about a great song",
+                                "Music recommendations",
+                                "Best bands of all time",
+                                "What's on your playlist?"
+                        ],
+                        "responses": [
+                                "I don't listen to music, but I can recommend some popular tunes. What genre are you into?",
+                                "Sure, let's talk music! Do you have a favorite genre or artist?",
+                                "Music is a universal language. Tell me your preferences, and I'll suggest a song."
+                        ]
+                },
+                {
+                        "tag": "books",
+                        "patterns": [
+                                "Recommend a good book",
+                                "What's your favorite book?",
+                                "Tell me about recent book releases",
+                                "Book suggestions",
+                                "Best authors"
+                        ],
+                        "responses": [
+                                "I don't read, but I can recommend some highly-rated books. What genre are you interested in?",
+                                "Books open new worlds. Let me know your interests, and I'll suggest a great read.",
+                                "Sure, let me suggest a classic: To Kill a Mockingbird."
+                        ]
+                },
+                {
+                        "tag": "health",
+                        "patterns": [
+                                "Healthy living tips",
+                                "Tell me about fitness routines",
+                                "Health advice",
+                                "Wellness tips",
+                                "How to stay healthy"
+                        ],
+                        "responses": [
+                                "Staying healthy is important! Do you have specific health or fitness goals?",
+                                "I can share general health tips. For more personalized advice, consider consulting a healthcare professional.",
+                                "Maintaining a healthy lifestyle is crucial. What aspects of health are you interested in?"
+                        ]
+                },
+                {
+                        "tag": "science",
+                        "patterns": [
+                                "Tell me an interesting science fact",
+                                "Explain a scientific concept",
+                                "Recent discoveries in science",
+                                "Famous scientists",
+                                "Science trivia"
+                        ],
+                        "responses": [
+                                "Science is fascinating! Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+                                "Sure, let's delve into science! Is there a specific scientific topic you're curious about?",
+                                "The world of science is vast and intriguing. What aspect of science are you interested in?"
+                        ]
+                },
+                {
+                        "tag": "history",
+                        "patterns": [
+                                "Tell me a historical fact",
+                                "Explain a historical event",
+                                "Famous historical figures",
+                                "History trivia",
+                                "Favorite historical period"
+                        ],
+                        "responses": [
+                                "History is full of interesting stories! Did you know that the Great Wall of China is over 13,000 miles long?",
+                                "Sure, let's explore history! Is there a specific historical event or era you'd like to know more about?",
+                                "The past is rich with stories. What aspect of history interests you the most?"
+                        ]
+                },
+                {
+                        "tag": "programming",
+                        "patterns": [
+                                "Favorite programming language",
+                                "Coding tips",
+                                "Ask a programming question",
+                                "Programming humor",
+                                "Recent developments in technology"
+                        ],
+                        "responses": [
+                                "I'm a fan of all programming languages! What coding language are you interested in?",
+                                "Coding is a valuable skill. Do you have a specific programming question or topic you'd like to discuss?",
+                                "Sure, let's talk programming! Is there a particular language or technology you're curious about?"
+                        ]
+                },
+                {
+                        "tag": "education",
+                        "patterns": [
+                                "Best study tips",
+                                "Learning strategies",
+                                "Ask an educational question",
+                                "Favorite subjects",
+                                "Online learning recommendations"
+                        ],
+                        "responses": [
+                                "Effective study habits can make a significant difference. What subject or topic are you currently studying?",
+                                "Education is a lifelong journey. Do you have any questions about learning or specific subjects?",
+                                "Sure, let's talk about education! Is there a particular aspect you're interested in, like online learning or study techniques?"
+                        ]
+                },
+                {
+                        "tag": "philosophy",
+                        "patterns": [
+                                "Discuss a philosophical concept",
+                                "Ask a philosophical question",
+                                "Favorite philosophical quote",
+                                "Philosophy of life",
+                                "Ethical dilemmas"
+                        ],
+                        "responses": [
+                                "Philosophy explores profound questions about existence and meaning. What philosophical concept intrigues you?",
+                                "Sure, let's delve into philosophy! Do you have a specific question or topic you'd like to discuss?",
+                                "The world of philosophy is rich with ideas. What aspect of philosophical thinking are you interested in?"
+                        ]
+                },
+                {
+                        "tag": "art",
+                        "patterns": [
+                                "Favorite art form",
+                                "Discuss a famous artwork",
+                                "Artistic inspiration",
+                                "Artistic techniques",
+                                "Art appreciation"
+                        ],
+                        "responses": [
+                                "Art is a beautiful expression of creativity. What art form or style resonates with you?",
+                                "Sure, let's talk about art! Do you have a favorite artist or artwork?",
+                                "Artistic expression comes in many forms. What aspect of art are you interested in?"
+                        ]
+                },
+                {
+                        "tag": "pets",
+                        "patterns": [
+                                "Favorite pet",
+                                "Pet care tips",
+                                "Ask a question about animals",
+                                "Discuss a pet-related topic",
+                                "Cute animal stories"
+                        ],
+                        "responses": [
+                                "Pets bring joy to our lives! Do you have a favorite type of pet or a specific animal you'd like to learn more about?",
+                                "Sure, let's talk about pets! Do you have any questions about pet care or animals?",
+                                "Animals have fascinating behaviors. What aspect of pets or wildlife are you curious about?"
+                        ]
+                },
+                {
+                        "tag": "fashion",
+                        "patterns": [
+                                "Favorite fashion style",
+                                "Fashion trends",
+                                "Ask a fashion-related question",
+                                "Clothing tips",
+                                "Fashion inspiration"
+                        ],
+                        "responses": [
+                                "Fashion is a form of self-expression. What style or trend appeals to you?",
+                                "Sure, let's talk about fashion! Do you have a specific fashion question or topic you'd like to explore?",
+                                "Clothing choices can be a reflection of personality. What aspect of fashion are you interested in?"
+                        ]
+                },
+                {
+                        "tag": "languages",
+                        "patterns": [
+                                "Favorite language",
+                                "Language learning tips",
+                                "Ask a language-related question",
+                                "Discuss multilingualism",
+                                "Language trivia"
+                        ],
+                        "responses": [
+                                "Languages open doors to new cultures. What language or languages are you interested in?",
+                                "Sure, let's talk about languages! Do you have any language-learning goals or questions?",
+                                "Multilingualism is a valuable skill. What aspect of languages intrigues you the most?"
+                        ]
+                },
+                {
+                        "tag": "celebrities",
+                        "patterns": [
+                                "Favorite celebrity",
+                                "Recent celebrity news",
+                                "Ask a question about famous people",
+                                "Discuss movie stars",
+                                "Celebrity gossip"
+                        ],
+                        "responses": [
+                                "Celebrities often influence popular culture. Do you have a favorite celebrity or follow any recent news?",
+                                "Sure, let's talk about celebrities! Is there a specific actor or actress you admire?",
+                                "Celebrity gossip can be entertaining. What aspect of the celebrity world are you curious about?"
+                        ]
+                },
+                {
+                        "tag": "nature",
+                        "patterns": [
+                                "Favorite natural landscape",
+                                "Nature appreciation",
+                                "Ask a question about wildlife",
+                                "Discuss environmental conservation",
+                                "Outdoor activities"
+                        ],
+                        "responses": [
+                                "Nature is awe-inspiring. Do you have a favorite natural landscape or outdoor activity?",
+                                "Sure, let's talk about nature! Do you have any questions about wildlife or environmental topics?",
+                                "Protecting the environment is crucial. What aspect of nature or conservation interests you?"
+                        ]
+                },
+                {
+                        "tag": "games",
+                        "patterns": [
+                                "Favorite video game",
+                                "Gaming tips",
+                                "Ask a gaming-related question",
+                                "Discuss board games",
+                                "Online gaming recommendations"
+                        ],
+                        "responses": [
+                                "Games offer a fun escape. What's your favorite video game or gaming genre?",
+                                "Sure, let's talk about games! Do you have any gaming-related questions or topics you'd like to explore?",
+                                "Whether video games or board games, each offers a unique experience. What aspect of gaming intrigues you?"
+                        ]
+                },
+                {
+                        "tag": "technology_news",
+                        "patterns": [
+                                "Tell me the latest tech news",
+                                "Tech headlines today",
+                                "What's happening in the tech world?",
+                                "Updates on technology",
+                                "Current tech trends"
+                        ],
+                        "responses": [
+                                "Sure, let me provide you with the latest tech news.",
+                                "Technology is evolving fast. Here are the recent updates.",
+                                "Stay informed with the latest happenings in the tech industry.",
+                                "Exciting things are happening in the tech world. Let me share the news.",
+                                "Get ready for a tech update!"
+                        ]
+                },
+                {
+                        "tag": "coding_help",
+                        "patterns": [
+                                "Need coding assistance",
+                                "Help with programming",
+                                "Coding challenges",
+                                "Programming support",
+                                "Code debugging"
+                        ],
+                        "responses": [
+                                "Sure, I can assist you with coding. What language are you working with?",
+                                "Coding can be tricky. Let me know where you're stuck.",
+                                "Programming challenges? I'm here to help you overcome them.",
+                                "Whether it's Python or Java, I'm ready to help with your coding queries.",
+                                "Let's tackle those coding challenges together."
+                        ]
+                },
+                {
+                        "tag": "science_facts",
+                        "patterns": [
+                                "Tell me interesting science facts",
+                                "Fascinating science information",
+                                "Science trivia",
+                                "Amazing scientific discoveries",
+                                "Fun science facts"
+                        ],
+                        "responses": [
+                                "Science is full of wonders. Here's an interesting fact for you.",
+                                "Discover the intriguing world of science with these facts.",
+                                "Did you know? Science has some mind-blowing facts.",
+                                "Get ready to be amazed by these scientific discoveries.",
+                                "Let's explore some fun science trivia."
+                        ]
+                },
+                {
+                        "tag": "virtual_assistant_tips",
+                        "patterns": [
+                                "How to use virtual assistants effectively",
+                                "Virtual assistant tips",
+                                "Getting the most out of virtual assistants",
+                                "Maximizing virtual assistant capabilities",
+                                "Virtual assistant productivity"
+                        ],
+                        "responses": [
+                                "Optimize your virtual assistant experience with these tips.",
+                                "Make your virtual assistant work for you with these strategies.",
+                                "Efficiency is key. Here are some tips for using virtual assistants.",
+                                "Get ready to boost your productivity with these virtual assistant tips.",
+                                "Unlock the full potential of your virtual assistant."
+                        ]
+                },
+                {
+                        "tag": "space_exploration",
+                        "patterns": [
+                                "Tell me about space exploration",
+                                "Space missions update",
+                                "Latest discoveries in space",
+                                "Fascinating space facts",
+                                "NASA's recent activities"
+                        ],
+                        "responses": [
+                                "Space is a vast frontier. Let me share some insights into space exploration.",
+                                "Stay updated on the latest space missions and discoveries.",
+                                "Did you know? There are always new and exciting things happening in space.",
+                                "Explore the wonders of the cosmos with these fascinating space facts.",
+                                "NASA is at the forefront of space exploration. Here's what they've been up to."
+                        ]
+                },
+                {
+                        "tag": "self_improvement",
+                        "patterns": [
+                                "Tips for personal growth",
+                                "Self-improvement strategies",
+                                "Goal-setting advice",
+                                "Building positive habits",
+                                "Becoming a better version of yourself"
+                        ],
+                        "responses": [
+                                "Invest in your personal growth with these valuable tips.",
+                                "Embark on a journey of self-improvement with these strategies.",
+                                "Setting goals is crucial for personal development. Let me guide you.",
+                                "Build positive habits that contribute to your overall well-being.",
+                                "Every day is an opportunity to become a better version of yourself."
+                        ]
+                },
+                {
+                        "tag": "job_search_tips",
+                        "patterns": [
+                                "Effective job search strategies",
+                                "Job hunting advice",
+                                "Resume tips",
+                                "Preparing for interviews",
+                                "Career development guidance"
+                        ],
+                        "responses": [
+                                "Navigate the job market successfully with these job search strategies.",
+                                "Job hunting can be challenging. Let me provide you with some valuable advice.",
+                                "Crafting a compelling resume is essential. Here are some tips.",
+                                "Prepare for interviews and stand out as a candidate with these insights.",
+                                "Invest in your career development with these helpful tips."
+                        ]
+                },
+                {
+                        "tag": "mindfulness_practices",
+                        "patterns": [
+                                "Mindfulness exercises",
+                                "Stress-relief techniques",
+                                "Mindful living tips",
+                                "Practicing mindfulness daily",
+                                "Cultivating a peaceful mind"
+                        ],
+                        "responses": [
+                                "Incorporate mindfulness into your daily routine with these exercises.",
+                                "Stress relief is essential. Here are some mindfulness techniques.",
+                                "Explore the art of mindful living with these valuable tips.",
+                                "Make mindfulness a habit for a more peaceful and centered life.",
+                                "Cultivate a sense of calm and tranquility with these mindfulness practices."
+                        ]
+                },
+                {
+                        "tag": "creative_writing",
+                        "patterns": [
+                                "Tips for creative writing",
+                                "Overcoming writer's block",
+                                "Inspiration for writers",
+                                "Building a writing routine",
+                                "Exploring different writing styles"
+                        ],
+                        "responses": [
+                                "Unleash your creativity with these tips for creative writing.",
+                                "Writer's block? Let me help you overcome it and get back to writing.",
+                                "Find inspiration for your writing journey with these prompts.",
+                                "Build a consistent writing routine to enhance your skills.",
+                                "Experiment with different writing styles to discover your unique voice."
+                        ]
+                },
+                {
+                        "tag": "pet_care_tips",
+                        "patterns": [
+                                "Caring for pets",
+                                "Pet health tips",
+                                "Choosing the right pet",
+                                "Training pets",
+                                "Creating a pet-friendly environment"
+                        ],
+                        "responses": [
+                                "Pets bring joy to our lives. Here are some tips for their care.",
+                                "Ensure the well-being of your furry friends with these pet health tips.",
+                                "Considering a pet? Learn how to choose the right one for you.",
+                                "Training pets requires patience and consistency. Here's how to do it effectively.",
+                                "Create a loving and pet-friendly environment at home with these suggestions."
+                        ]
+                },
+                {
+                        "tag": "DIY_crafts",
+                        "patterns": [
+                                "DIY craft ideas",
+                                "Craft projects for beginners",
+                                "Homemade gift ideas",
+                                "Upcycling and recycling crafts",
+                                "Creative DIY home decor"
+                        ],
+                        "responses": [
+                                "Get creative with these DIY craft ideas for various skill levels.",
+                                "Embark on craft projects perfect for beginners with these suggestions.",
+                                "Handmade gifts are thoughtful. Here are some DIY gift ideas.",
+                                "Upcycling and recycling can be fun! Try these creative crafts.",
+                                "Transform your living space with unique and creative DIY home decor projects."
+                        ]
+                },
+                {
+                        "tag": "vehicle_maintenance",
+                        "patterns": [
+                                "Car maintenance tips",
+                                "DIY vehicle repairs",
+                                "Choosing the right vehicle",
+                                "Safe driving practices",
+                                "Dealing with common car issues"
+                        ],
+                        "responses": [
+                                "Keep your vehicle in top condition with these essential car maintenance tips.",
+                                "Learn to handle basic vehicle repairs with these DIY suggestions.",
+                                "Considering a new vehicle? Here's a guide to help you make the right choice.",
+                                "Safe driving is crucial. Brush up on your knowledge with these tips.",
+                                "Know how to deal with common car issues to ensure a smooth driving experience."
+                        ]
+                },
+                {
+                        "tag": "language_learning",
+                        "patterns": [
+                                "Effective language learning strategies",
+                                "Language learning apps recommendations",
+                                "Practicing a new language",
+                                "Overcoming language learning challenges",
+                                "Bilingual benefits"
+                        ],
+                        "responses": [
+                                "Mastering a new language is exciting! Here are effective learning strategies.",
+                                "Discover language learning apps that can enhance your language skills.",
+                                "Practice makes perfect! Explore ways to practice and improve your language proficiency.",
+                                "Overcoming challenges is part of the language learning journey. Here's how to tackle them.",
+                                "Bilingualism has numerous benefits. Let's explore them together."
+                        ]
+                },
+                {
+                        "tag": "financial_planning",
+                        "patterns": [
+                                "Financial planning tips",
+                                "Budgeting for beginners",
+                                "Investment advice",
+                                "Saving money strategies",
+                                "Building a secure financial future"
+                        ],
+                        "responses": [
+                                "Secure your financial future with these effective planning tips.",
+                                "Budgeting is the foundation of financial stability. Here's how to get started.",
+                                "Explore investment opportunities with this comprehensive advice.",
+                                "Saving money is a smart habit. Discover strategies to boost your savings.",
+                                "Build a solid foundation for your financial future with these essential steps."
+                        ]
+                },
+                {
+                        "tag": "home_gardening",
+                        "patterns": [
+                                "Home gardening tips",
+                                "Growing plants indoors",
+                                "Choosing the right plants for your garden",
+                                "DIY garden projects",
+                                "Maintaining a thriving garden"
+                        ],
+                        "responses": [
+                                "Transform your space with these home gardening tips for a vibrant garden.",
+                                "Explore the world of indoor plants and create a green oasis at home.",
+                                "Choosing the right plants is key to a successful garden. Let me guide you.",
+                                "Engage in creative DIY garden projects to enhance your outdoor space.",
+                                "Maintain a thriving garden with essential care tips for your plants."
+                        ]
+                },
+                {
+                        "tag": "mind-bending_puzzles",
+                        "patterns": [
+                                "Challenging puzzles",
+                                "Mind-bending riddles",
+                                "Brain teasers",
+                                "Sudoku and crossword tips",
+                                "Puzzle-solving strategies"
+                        ],
+                        "responses": [
+                                "Challenge your mind with these intriguing and challenging puzzles.",
+                                "Riddles that will bend your mind! Are you up for the challenge?",
+                                "Stimulate your brain with these thought-provoking brain teasers.",
+                                "Master the art of Sudoku and crosswords with these helpful tips.",
+                                "Unlock puzzle-solving strategies that will sharpen your cognitive skills."
+                        ]
+                },
+                {
+                        "tag": "parenting_advice",
+                        "patterns": [
+                                "Parenting tips for new parents",
+                                "Balancing work and parenting",
+                                "Creative activities for kids",
+                                "Dealing with parenting challenges",
+                                "Building a strong parent-child bond"
+                        ],
+                        "responses": [
+                                "New to parenting? Here are essential tips for the exciting journey ahead.",
+                                "Balancing work and parenting is a challenge. Discover strategies to make it easier.",
+                                "Engage your kids with creative activities that nurture their development.",
+                                "Parenting comes with challenges. Let's explore effective ways to navigate them.",
+                                "Build a strong and loving bond with your child through meaningful interactions."
+                        ]
+                },
+                {
+                        "tag": "fitness_motivation",
+                        "patterns": [
+                                "Staying motivated for fitness",
+                                "Effective workout routines",
+                                "Healthy lifestyle choices",
+                                "Overcoming fitness plateaus",
+                                "Mind-body wellness practices"
+                        ],
+                        "responses": [
+                                "Maintain fitness motivation with these tips for a healthy and active lifestyle.",
+                                "Discover workout routines that cater to your fitness goals and preferences.",
+                                "Make healthy lifestyle choices that contribute to your overall well-being.",
+                                "Overcoming fitness plateaus is possible! Here's how to push through.",
+                                "Explore mind-body wellness practices that enhance both mental and physical health."
+                        ]
+                },
+                {
+                        "tag": "cooking_delights",
+                        "patterns": [
+                                "Cooking inspiration",
+                                "Delicious recipes to try",
+                                "Culinary tips and tricks",
+                                "Cooking for special occasions",
+                                "Healthy and flavorful meals"
+                        ],
+                        "responses": [
+                                "Get inspired in the kitchen with these cooking ideas and culinary adventures.",
+                                "Try your hand at these delicious recipes that will delight your taste buds.",
+                                "Enhance your cooking skills with valuable tips and tricks from the culinary world.",
+                                "Cooking for a special occasion? Here are some impressive recipes to consider.",
+                                "Create healthy and flavorful meals that bring joy to your dining table."
+                        ]
+                }
+        ]
+}
