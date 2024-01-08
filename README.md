@@ -31,7 +31,7 @@ This project implements a simple chatbot using Python, TensorFlow, and NLTK.
 
 2. Interact with the chatbot by entering your messages.
 
-    - To stop the chatbot, type `stop`.
+    - To stop the chatbot, type `exit`.
 
 ## File Structure
 
